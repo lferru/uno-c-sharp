@@ -32,7 +32,7 @@ namespace UnoCards {
 		public Deck() {
 
 			string[] colors = new string[] { "RED", "YELLOW", "GREEN", "BLUE" };
-		    string[] wilds = new string[] { "NORMAL", "+4", "CUSTOM", "SHUFFLE" };
+			string[] wilds = new string[] { "NORMAL", "+4", "CUSTOM", "SHUFFLE" };
 			string[] ranks = new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "+2", "REVERSE", "SKIP" };
 			int i = 0;
 
@@ -60,7 +60,7 @@ namespace UnoCards {
 			packet[i] = new Card("WILD", "SHUFFLE");
 		}
 		
-		public void shuffle() {
+		public void shuffle() { // uses the Knuth Shuffle
 			
 			Card temp;
 			Random rand = new Random();
